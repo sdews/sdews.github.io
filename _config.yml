@@ -1,5 +1,5 @@
 # Site settings
-title: hebi Blog
+title: Hebi Blog
 SEOTitle: 何必的博客 | Hebi Blog
 header-img: img/ncu_sunset.jpg
 email: hrs0323@gmail.com
@@ -30,7 +30,7 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-timezone: CN  
+#timezone: CN  
 
 
 
@@ -38,9 +38,9 @@ timezone: CN
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
-gems: [jekyll-paginate]
 plugins: [jekyll-paginate]
-
+math_engine: katex
+math_engine_opts: {}
 
 
 
@@ -51,7 +51,8 @@ plugins: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+math_engine: katex
+math_engine_opts: {}
 
 
 # Disqus settings
@@ -74,7 +75,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
+sidebar-about-description: "谁知道呢"
 sidebar-avatar: /img/hangzhou_snow.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
