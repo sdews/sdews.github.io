@@ -92,13 +92,13 @@ service-worker: true
 
 
 
-# Friends
-friends: [
-    {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "Ya ya",
-        href: "#"
-    }
-]
+## Friends
+#friends: [
+#    {
+#    #     title: "Su",
+#    #     href: "http://su.gallery/"
+#    # },{
+#        title: "Ya ya",
+#        href: "#"
+#    }
+#]
