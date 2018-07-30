@@ -68,10 +68,25 @@ ConvNet 的基础网络, 作者选用了三种网络(论文里用了两种, 源�
 Region Proposal Network, 下面简称为RPN, 这是较Fast R-CNN增加的部分, 其取代了Selective search方法
 
 ### RPN的任务——用来做什么的？
+用来生成region proposals， 取代selective search等生成proposal的方法
 
+> region proposal network与selective search的不同之处
+> 
+> > 在Faster R-CNN，RPN的输入是conv feature map, 共用卷积层，可以进行联合训练，实现了unified training. 
+> >
+> > 而在Fast R-CNN中， Selective research的输入是整张图片， 图片通过CNN生成feature map，还要通过Selective research生成Proposals. 显然，这无法实现一体化，并且Selective Research耗时多.
 
 ### RPN的结构
 
+RPN是一种fully convolutional network，即所谓的全卷积网络, 它的构成分test time, train time进行陈述. 
+
+#### RPN(test time)
+
+输入是conv feature map of any size（也可以是a image of any size， 在Faster R-CNN中是conv feature map）
+
+输出是a set of rectangle object proposals, each with an objectness score (即当前proposal含目标物的score)
+
+构成: 
 #### 训练阶段
 
 #### 运行阶段
