@@ -6,8 +6,12 @@
   
   它的输入图像为32×32的灰度值图像, 后面有3个卷积层, 1个全连接层和1个高斯连接层(该层用来计算Loss, 现代版本已用softmax Loss取代). 
 
-  [input/32×32×1] - [conv/5×5/s1/28 28×28×6] - [avg pool/2×2/s2 14×14×6] - [sigmoid] - [conv/5×5/s1/16 10×10×16]
-  - [avg pool/2×2/s2 5×5×16] - [fc] - [fc] - [Gaussian connection] - [output]
+  - [input/32×32×1] 
+  - [C1 conv/5×5/s1/28 28×28×6] - [S2 avg pool/2×2/s2 14×14×6] - [sigmoid] 
+  - [C3 conv/5×5/s1/16 10×10×16] - [S4 avg pool/2×2/s2 5×5×16] 
+  - [C5 conv] 
+  - [FC6]
+  - [output]
 
   ![image](/img/in-post/interview-problem/LeNet.jpg)
 
@@ -23,8 +27,12 @@
 
   AlexNet包含了6亿3000万个连接, 6000万个参数和65万个神经元, 拥有5个卷积层, 其中3个卷积层后面连接了最大池化层, 最后还有3个全连接层. 
 
-  [input] - [conv/11×11/s4/96 - ReLU - lRN - Max-pool/3×3/s2] -  [conv/5×5/s1/256 - ReLU - lRN - Max-pool/3×3/s2]
-  - [conv/3×3/s1/384 - ReLU] * 2 - [conv/3×3/s1/256- ReLU - Max-pool/3×3/s2] - [fc 4096 - ReLU] - [fc 4096 - ReLU]
+  - [input] 
+  - [conv/11×11/s4/96 - ReLU - lRN - Max-pool/3×3/s2] 
+  - [conv/5×5/s1/256 - ReLU - lRN - Max-pool/3×3/s2]
+  - [conv/3×3/s1/384 - ReLU] * 2 
+  - [conv/3×3/s1/256- ReLU - Max-pool/3×3/s2] 
+  - [fc 4096 - ReLU] - [fc 4096 - ReLU]
   - [fc 1000]
 
   ![image](/img/in-post/interview-problem/AlexNet.jpg)
