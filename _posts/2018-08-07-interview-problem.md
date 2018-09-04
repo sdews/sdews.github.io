@@ -132,7 +132,8 @@
     即准确率会先上升然后达到饱和, 再持续增加深度则会导致准确率下降.
 
   - ResNet提出了一种残差模块, 如下图所示
-    ![image](/img/in-post/interview-problem/summary_CNN_model.png)
+  
+      ![image](/img/in-post/interview-problem/residual_block.png)
 
   - 假定某段神经网络的输入是x, 期望输出是H(x), 如果我们直接把输入x传到输出作为初始结果,
     那么此时我们需要学习的目标就是F(x)=H(x)-x.
@@ -143,8 +144,10 @@
    整个网络则只需要学习输入, 输出差别的那一部分, 简化学习目标和难度.
 
 - 以上个网络的比较图
-  ![image](/img/in-post/interview-problem/summary_CNN_model.png)
-  注: GoogLeNet的参数量是6.7977 million
+
+    ![image](/img/in-post/interview-problem/summary_CNN_model.png)
+  
+    注: GoogLeNet的参数量是6.7977 million
 
 ## 目标检测模型
 
@@ -232,6 +235,7 @@
      后面还带有reshape操作, softmax操作, reshape操作
 
    RPN(test time)的结构如下图所示.
+   
       ![image](/img/in-post/interview-problem/rpn_flow2.svg)
 
 4. Faster R-CNN与SSD的区别
