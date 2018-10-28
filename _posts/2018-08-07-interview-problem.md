@@ -9,7 +9,7 @@
   - [input/32×32×1] 
   - [C1 conv/5×5/s1/28 28×28×6] - [S2 avg pool/2×2/s2 14×14×6] - [sigmoid] 
   - [C3 conv/5×5/s1/16 10×10×16] - [S4 avg pool/2×2/s2 5×5×16] 
-  - [C5 conv] 
+  - [C5 conv]
   - [FC6]
   - [output]
 
