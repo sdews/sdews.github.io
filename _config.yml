@@ -56,7 +56,7 @@ math_engine_opts: {}
 
 
 # Disqus settings
-disqus_username: hebi
+disqus_username: sdews
 
 # Netease settings
 netease_comment: false
@@ -65,11 +65,11 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: 26ee5076d22ed54bc9380bb34b567566
 
 # Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
+ga_track_id: 'UA-137858985-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 
 
